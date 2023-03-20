@@ -11,9 +11,9 @@ typedef struct Student {
 int compare(const void* a, const void* b) {
     Student first = *(Student*)a;
     Student second = *(Student*)b;
-    if (first.score < second.score)
+    if (first.score > second.score)
         return -1;
-    else if (first.score > second.score)
+    else if (first.score < second.score)
         return 1;
     else
         return 0;
